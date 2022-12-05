@@ -1,8 +1,10 @@
 <template>
-  <div class="">
+  <div>
     <BennerImage class="img"></BennerImage>
     <BtnAdd></BtnAdd>
-    <div class="d-flex flex-wrap col-4">
+    <div class="card">
+      <Card></Card>
+      <Card></Card>
       <Card></Card>
     </div>
     <Footer></Footer>
@@ -26,5 +28,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+}
 </style>

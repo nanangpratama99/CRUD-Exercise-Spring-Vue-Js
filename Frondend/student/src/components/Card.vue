@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="container">
       <div class="card flex m-2">
         <div class="card-header">Name</div>
@@ -9,14 +8,16 @@
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <router-link to="/update">
-            <button href="#" class="btn btn-primary mr-3">Update</button>
-          </router-link>
-          <button href="#" class="btn btn-danger">Delete</button>
-        </div>
+            <div class="d-flex row">
+              <router-link to="/update">
+              <button href="#" class="btn btn-primary mr-3">Update</button>
+            </router-link>
+            <button href="#" class="btn btn-danger">Delete</button>
+            <img class="logo-gender" src="../assets/male.png" alt="gender" />
+            </div>
+          </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -25,5 +26,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.logo-gender {
+  width: 40px;
+  justify-content: flex-end;
+  margin-left: 180px
+}
 </style>

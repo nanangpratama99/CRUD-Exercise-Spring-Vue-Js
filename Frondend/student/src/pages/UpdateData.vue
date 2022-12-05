@@ -1,6 +1,9 @@
 <template>
   <div>
     <BennerImage></BennerImage>
+    <router-link to="/">
+      <button class="btn btn-primary my-3 ml-3">Back</button>
+    </router-link>
     <Form></Form>
     <Footer></Footer>
   </div>
